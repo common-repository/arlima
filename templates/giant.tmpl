@@ -1,0 +1,18 @@
+<div data-post="${article.post}" class="${container.class} tmpl-article giant">
+    {{if image.src}}
+        <img src="{{html image.src}}" />
+    {{else}}
+        <img src="{{html image.url}}" />
+    {{/if}}
+    <div class="tmpl-giant-content">
+        {{html article.html_title}}
+        {{html article.html_text}}
+        {{html article_end}}
+    </div>
+</div>
+
+{{if child_articles}}
+    <div class="teaser-children">
+        {{html child_articles}}
+    </div>
+{{/if}}

@@ -1,0 +1,7 @@
+{{if image}}
+    {{if image.src}}
+        <img src="{{html image.src}}" class="${image.image_class} ${image.image_size}" alt="" />
+    {{else}}
+        {{html image.html}}
+    {{/if}}
+{{/if}}
